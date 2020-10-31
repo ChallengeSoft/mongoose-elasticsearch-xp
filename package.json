@@ -39,7 +39,8 @@
     "test-v7-covered": "npm run lint && nyc --reporter=lcov --reporter=text-lcov mocha --report lcovonly -- -t 10000 -R spec ./test/es7/*",
     "test-v7-covered-html": "nyc --reporter=lcov --reporter=text-lcov mocha -- -t 10000 -R spec ./test/es7/*",
     "watch": "npm run test-v7 -- --watch",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "npm run build"
   },
   "author": "Jean-Baptiste Demonte <jbdemonte@gmail.com>",
   "license": "MIT",
